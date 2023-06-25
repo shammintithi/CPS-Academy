@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-    string s = "aabAa";
-    // string s = "aabaa";
+    //string s = "aabAa";
+     string s = "aabaa";
     string tmp = s;
 
     reverse(s.begin(), s.end());

@@ -22,7 +22,7 @@ int main() {
     string s = "bcdaeB";
 
     // sort(s.begin(), s.end());
-    sort(s.rbegin(), s.rend()); //reverse order sortings
+    sort(s.rbegin(), s.rend()); //reverse order sortings......largest to smallest
 
     cout << s << endl;
 }

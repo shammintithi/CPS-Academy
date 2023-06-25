@@ -20,7 +20,7 @@ int main() {
     Tithi
     string s = "SHAMMIMN";
 
-    // s.erase(remove (s.begin(), s.end(), 'M'), s.begin() +4);
-    s.erase(remove (s.begin(), s.end(), 'M'), s.end());
+    s.erase(remove (s.begin(), s.end(), 'M'), s.begin() +4);
+    //s.erase(remove (s.begin(), s.end(), 'M'), s.end());
     cout << s << endl;
 }

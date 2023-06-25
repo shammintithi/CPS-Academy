@@ -3,8 +3,8 @@ using namespace std;
 
 int main() {
     string s = "shammin";
-    string t = "akter tihi akter";
+    string t = "akter tithi akter";
 
-    copy(t.begin() +6, t.begin() +10, back_inserter(s));
+    copy(t.begin() +6, t.begin() +11, back_inserter(s));
     cout << s << endl;
 }
