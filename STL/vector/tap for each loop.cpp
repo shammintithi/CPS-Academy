@@ -10,3 +10,4 @@ int main(){
     }
     cout << endl;
 }
+// v theke input niye u te rakhbe = u

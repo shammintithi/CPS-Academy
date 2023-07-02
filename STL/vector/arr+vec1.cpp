@@ -13,7 +13,7 @@ int main(){
     v.push_back(5);
     v.push_back(6);
 
-    v[3] = 15;
+    v[2] = 15;
 
     //print out the vector index value
     cout << v[2] << endl;
