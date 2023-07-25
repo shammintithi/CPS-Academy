@@ -7,8 +7,8 @@ int main() {
     //where to start to where this will be end
 
 
-    //sort(v.begin(), v.end());
-    sort (v.begin()+1, v.begin()+5);
+    sort(v.begin(), v.end());
+    //sort (v.begin()+1, v.begin()+5);
     //complexity : 0(nlog2(n))
 
     for (auto u : v) cout << u << " ";

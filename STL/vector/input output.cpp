@@ -5,7 +5,7 @@ int main() {
     int n; 
     vector<int> v;
 
-    //take input for n
+    //take input for n.
     cin >> n;
     for (int i = 0; i < n; i++) {
         int c;
