@@ -1,5 +1,5 @@
 // Written by: Shammin Akter Tithi
-// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/V
+// Problem Link: https://lightoj.com/problem/dimik-factorial
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -20,16 +20,18 @@ using namespace std;
 #define Tithi ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 int main() {
     Tithi
-    int a, b;
-    cin >> a >> b;
+    int t;
+    cin >> t;
 
-    if(a > b or a == b){
-        cout << "Right" << endl;
-    }
-    else if(a < b){
-        cout << "Wrong" << endl;
-    }
-    else {
-        cout << "Wrong" << endl;
+    while (t--){
+        int n;
+        cin >> n;
+
+        int factorial = 1;
+
+        for(int i = 0; i < n; i++){
+            factorial *= i;
+        }
+        cout << factorial << endl;
     }
 }

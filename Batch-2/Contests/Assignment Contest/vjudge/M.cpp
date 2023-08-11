@@ -1,5 +1,5 @@
 // Written by: Shammin Akter Tithi
-// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/V
+// Problem Link: https://vjudge.net/contest/566680#problem/M
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -20,16 +20,7 @@ using namespace std;
 #define Tithi ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 int main() {
     Tithi
-    int a, b;
-    cin >> a >> b;
-
-    if(a > b or a == b){
-        cout << "Right" << endl;
-    }
-    else if(a < b){
-        cout << "Wrong" << endl;
-    }
-    else {
-        cout << "Wrong" << endl;
+    for(int i = 0; i < 1000; i++){
+        cout << "Hello World" << endl;
     }
 }

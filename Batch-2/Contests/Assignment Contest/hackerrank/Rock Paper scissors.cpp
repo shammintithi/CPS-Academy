@@ -1,5 +1,5 @@
 // Written by: Shammin Akter Tithi
-// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/V
+// Problem Link: https://www.hackerrank.com/contests/cpc-batch-2-module-1-assignment-contest/challenges/class-10-aa-task-1-aa-rock-paper-scissors
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -20,16 +20,16 @@ using namespace std;
 #define Tithi ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 int main() {
     Tithi
-    int a, b;
-    cin >> a >> b;
+    char r, p, s;
+    
+    char c1, c2;
+    cin >> c1 >> c2;
 
-    if(a > b or a == b){
-        cout << "Right" << endl;
+
+    if(c1 == p && c2 == r) {
+        cout << "first player" << endl;
     }
-    else if(a < b){
-        cout << "Wrong" << endl;
-    }
-    else {
-        cout << "Wrong" << endl;
+    else { 
+        cout << "second player" << endl;
     }
 }
