@@ -1,5 +1,5 @@
 // Written by: Shammin Akter Tithi
-// Problem Link: https://lightoj.com/problem/dimik-factorial
+// Problem Link: https://www.hackerrank.com/contests/cpc-batch-2-module-1-assignment-contest/challenges/class-13-aa-task-2-aa-count-number-of-divisors-i
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -23,15 +23,17 @@ int main() {
     int t;
     cin >> t;
 
-    while (t--){
+    for(int i = 1; i <= t; i++){
         int n;
         cin >> n;
-
-        ll factorial = 1;
-
-        for(int i = 1; i <= n; i++){
-            factorial *= i;
+    
+        int cnt = 0;
+        int x = sqrt(n);
+        if(n % x == 0){
+            cnt++;
+            if(x != n / x)
+            cnt++;
         }
-        cout << factorial << endl;
+        cout << "Case " << i << ": " << cnt << endl;
     }
 }

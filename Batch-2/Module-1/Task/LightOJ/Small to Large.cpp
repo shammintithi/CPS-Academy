@@ -1,5 +1,5 @@
 // Written by: Shammin Akter Tithi
-// Problem Link: https://lightoj.com/problem/dimik-factorial
+// Problem Link: https://lightoj.com/problem/dimik-small-to-large
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -22,16 +22,16 @@ int main() {
     Tithi
     int t;
     cin >> t;
+    vector<int> v(3), s;
 
-    while (t--){
-        int n;
-        cin >> n;
+    while(t--){
+        for(int i = 1; i <= 3; i++)cin >> v[i];
+        s = v;
 
-        ll factorial = 1;
+        sort(s.begin(), s.end());
 
-        for(int i = 1; i <= n; i++){
-            factorial *= i;
+        for(auto u : s){
+            cout << "Case " << t << ": " << u << sp;
         }
-        cout << factorial << endl;
     }
 }

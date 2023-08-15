@@ -20,16 +20,16 @@ using namespace std;
 #define Tithi ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 int main() {
     Tithi
-    char r, p, s;
-    
     char c1, c2;
-    cin >> c1 >> c2;
+    cin >> c1 >> c2;    
 
-
-    if(c1 == p && c2 == r) {
-        cout << "first player" << endl;
+    if((c1 == 'p' and c2 == 'r') or (c1 == 'r' and c2 == 's') or (c1 == 's' and c2 == 'p')){
+        cout << "First Player" << endl;
     }
-    else { 
-        cout << "second player" << endl;
+    else if((c1 == 's' and c2 == 'r') or (c1 == 'p' and c2 == 's')){
+        cout << "Second Player" << endl;
+    }
+    else {
+        cout << "Draw" << endl;
     }
 }

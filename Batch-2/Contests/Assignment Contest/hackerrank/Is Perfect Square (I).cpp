@@ -1,5 +1,5 @@
 // Written by: Shammin Akter Tithi
-// Problem Link: https://lightoj.com/problem/dimik-factorial
+// Problem Link: https://www.hackerrank.com/contests/cpc-batch-2-module-1-assignment-contest/challenges/class-13-aa-task-1-aa-is-perfect-square-i
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -22,16 +22,15 @@ int main() {
     Tithi
     int t;
     cin >> t;
-
-    while (t--){
+    
+    for(int i = 1; i <= t; i++) {
         int n;
         cin >> n;
 
-        ll factorial = 1;
-
-        for(int i = 1; i <= n; i++){
-            factorial *= i;
+        int x = sqrt(n);
+        if(x * x == n) {
+            cout << "Case " << i << ": " << "YES" << endl;
         }
-        cout << factorial << endl;
+        else cout << "Case " << i << ": " << "NO" << endl;
     }
 }
