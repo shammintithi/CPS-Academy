@@ -20,20 +20,19 @@ using namespace std;
 #define Tithi ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 int main() {
     Tithi
-    int t;
-    cin >> t;
+    int n;
+    cin >> n;
 
-    for(int i = 1; i <= t; i++){
-        int n;
-        cin >> n;
-    
-        int cnt = 0;
-        int x = sqrt(n);
-        if(n % x == 0){
+    int i  = 1;
+    int cnt = 0;
+
+    while(i * i <= n){
+        if(n % i == 0){
             cnt++;
-            if(x != n / x)
-            cnt++;
+            if(i != n / i){
+                cnt++;
+            }
         }
-        cout << "Case " << i << ": " << cnt << endl;
+        i++;
     }
 }
