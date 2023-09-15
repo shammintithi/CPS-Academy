@@ -1,5 +1,5 @@
 // Written by: Shammin Akter Tithi
-// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/K
+// Problem Link: 
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -20,19 +20,20 @@ using namespace std;
 #define Tithi ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 int main() {
     Tithi
-        int a, b, c;
-        cin >> a >> b >> c;
+    int a[], cnt;
+    int n;
+    cin >> n;
 
-        int mx, min;
+    for(int i = 0; i <= n; i++) cin >> a[i];
 
-        if(a > b  and a > c) mx = a;
-        else if(b > c and b > a) mx = b;
-        else mx = c;
+    for(int i = 0; i <= n; i++) cnt++;
 
-        if(a < b and a < c) min = a;
-        else if(b < c and b < a) min = b;
-        else min = c;
+    int q;
+    cin >> q;
 
-        cout << min << sp << mx << endl;
-        
+    while(q--){
+        int a;
+        cin >> a;
+        cout << cnt[a] << endl
+    }
 }

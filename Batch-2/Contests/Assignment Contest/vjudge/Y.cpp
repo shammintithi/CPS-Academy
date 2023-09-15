@@ -1,5 +1,5 @@
 // Written by: Shammin Akter Tithi
-// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/K
+// Problem Link: https://vjudge.net/contest/566680#problem/Y
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -18,21 +18,18 @@ using namespace std;
 #define rp(x) cout << fixed << setprecision(x)
 
 #define Tithi ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+const int mx = 100123;
+int a[mx], b[mx];
 int main() {
     Tithi
-        int a, b, c;
-        cin >> a >> b >> c;
+    int n;
+    cin >> n;
+    for (int i = 1; i <= n; i++) cin >> a[i];
 
-        int mx, min;
-
-        if(a > b  and a > c) mx = a;
-        else if(b > c and b > a) mx = b;
-        else mx = c;
-
-        if(a < b and a < c) min = a;
-        else if(b < c and b < a) min = b;
-        else min = c;
-
-        cout << min << sp << mx << endl;
-        
+    for (int i = 1; j = n; i <= n; i++, j--){
+        b[j] = a[i];
+    }
+    for(int i = 1; i <= n; i++){
+        cout << b[i] << endl;
+    }
 }

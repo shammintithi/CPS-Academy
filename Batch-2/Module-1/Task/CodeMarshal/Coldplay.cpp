@@ -20,8 +20,8 @@ using namespace std;
 #define Tithi ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 int main() {
     Tithi
-        int p, q;
-        cin >> p >> q;
+        int p, q, y;
+        cin >> p >> q >> y;
 
-        cout << p * 
+        cout << (((p * 5) + (q * 2)) * 52) * y << endl;
 }
