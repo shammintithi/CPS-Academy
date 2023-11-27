@@ -8,7 +8,7 @@ int main() {
     for (int i = 1; i <= x; i++) {
         if(i % 5 == 0) {
             cout << "Ignore it!" << endl;
-            continue;
+            break;
             cout << "Faltu" << endl;
         }
         if (i % 2 == 1){
@@ -19,4 +19,4 @@ int main() {
     }
 }
 
-// continue: er pore {ei brackets er moddhe ja ja thakbe shob kisu off hoye jabe}
+// break: break ekbar pele erpor r kono for loop er {ei brackets er moddhe ja ja thakbe ta kaj krbe na}
