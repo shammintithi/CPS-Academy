@@ -1,6 +1,3 @@
-// Written by: Shammin Akter Tithi
-// Problem Link: https://vjudge.net/contest/566680#problem/X
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -20,20 +17,11 @@ using namespace std;
 #define Tithi ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 int main() {
     Tithi
-    int n;
+    
+    double n;
     cin >> n;
-    vector<int> v(n + 1);
 
-    for(int i = 1; i <= (n * 4) - 1; i++){
-        int x;
-        cin >> x;
+    // cout << n * 0.09144 << setprecision(14) <<  endl;
 
-        v[x]++;
-    }
-    for(int i = 1; i <= v.size(); i++){
-        if(v[i] == 3){
-            cout << i << endl;
-            break;
-        }
-    }
+    cout << n * 0.09144 << fixed << setprecision(14) << endl;
 }
