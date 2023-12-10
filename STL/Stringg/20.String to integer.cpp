@@ -9,4 +9,4 @@ int main() {
     cout << a << endl;
     a++;//increase +1 of the last digit 
     cout << a << endl;
-}
+} 

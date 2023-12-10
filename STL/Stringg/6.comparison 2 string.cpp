@@ -8,3 +8,4 @@ int main() {
     if(s1 == s2) cout << "Equal" << endl;//complexity 0(N) ,here n is a smallest number of s1 or s2.
     else cout << "Not equal" << endl;
 }
+//Here the index number will be check.

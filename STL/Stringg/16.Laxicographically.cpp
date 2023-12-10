@@ -12,8 +12,8 @@ int main() {
     v.push_back("jenny");
     v.push_back("Raifa");
 
-    sort(v.rbegin(), v.rend()); //decsending largest to smallest
-    //sort(v.begin(), v.end());
+    // sort(v.rbegin(), v.rend()); //decsending largest to smallest //laxicographically
+    sort(v.begin(), v.end());
     for(auto u : v) cout << u << endl;
 
 }

@@ -10,4 +10,5 @@ int main() {
 
     if(s == tmp) cout << "Palindrome" << endl;
     else cout << "Not Palindrome";
-}
+}  
+//palindrome holo reverse krleo same ashbe. 
